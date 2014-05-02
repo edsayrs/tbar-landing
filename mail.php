@@ -1,45 +1,55 @@
 <?php
+if(isset($_POST['email'])) {
+    
+    $email_to = "steffiemaxwell@gmail.com";
+     
+    $email_subject = "website html form submissions";
+     
+     
+    function died($error) {
+        // your error code can go here
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
+     
+    // validation expected data exists
+    if(!isset($_POST['email'])) {
+        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+    }
+     
+       $email_from = $_POST['email']; // required
+       
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+  if(!preg_match($email_exp,$email_from)) {
+    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+  }
+  if(strlen($error_message) > 0) {
+    died($error_message);
+  }
+    $email_message = "Form details below.\n\n";
+     
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+     
+    $email_message .= "Email: ".clean_string($email_from)."\n";
+        
+// create email headers
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);  
+?><!-- place your own success html below -->
+ 
+Thank you for contacting us. We will be in touch with you very soon.
 
-function checkOK($field) {
-
-if (eregi("\r",$field) || eregi("\n",$field)) {
-
-die("Invalid Input!");
-
+ 
+<?php
 }
-
-$name = $_POST['name'];
-
-checkOK($name);
-
-$email = $_POST['email'];
-
-checkOK($email);
-
-$comments = $_POST['comments'];
-
-checkOK($comments);
-
-$to = "steffiemaxwell@gmail.com<script type="text/javascript">
-16
-/* <![CDATA[ */
-17
-(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
-18
-/* ]]> */
-19
-</script>";
-
-$message = "Someone just filled in your comments form. Their e-mail address is: $email";
-
-if(mail($to, "contact-form-tbar-landing", $message, "From: $email\n")) {
-
-echo "Thanks!";
-
-} else {
-
-echo "Oops! Invalid entry. Please check that you filled in the form correctly.";
-
-}
-
+die();
 ?>
