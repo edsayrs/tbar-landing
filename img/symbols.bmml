@@ -1,0 +1,67 @@
+<mockup version="1.0" skin="sketch" measuredW="1207" measuredH="736" mockupW="1149" mockupH="716">
+  <controls>
+    <control controlID="0" controlTypeID="__group__" x="60" y="20" w="1052" h="393" measuredW="1052" measuredH="393" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>border</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Accordion" x="0" y="167" w="150" h="226" measuredW="150" measuredH="390" zOrder="0" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>clothing%0A-%20underwear%0A-%20shirts%0A-%20shoes%0A-%20jewelry%0AFitting%20Technology%0A%20%0AArt</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::ButtonBar" x="234" y="36" w="818" h="57" measuredW="272" measuredH="29" zOrder="1" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>Shirts%2C%20Underwear%2C%20Two%2C%20Three</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="178" h="152" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="0">
+          <controlProperties>
+            <src>./Screen%2520Shot%25202012-03-01%2520at%25209.43.55%2520AM.png</src>
+            <text/>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="1" controlTypeID="__group__" x="60" y="80" w="1147" h="656" measuredW="1147" measuredH="656" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>web%20size</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="1147" h="656" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="1">
+          <controlProperties>
+            <text>A%20Web%20Page%0Ahttp%3A//</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="2" controlTypeID="__group__" x="58" y="151" w="239" h="135" measuredW="239" measuredH="135" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Mens%20Logo</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Title" x="0" y="0" w="239" h="-1" measuredW="121" measuredH="28" zOrder="0" locked="false" isInGroup="2">
+          <controlProperties>
+            <color>16750848</color>
+            <size>20</size>
+            <text>T*BAR%20Mens</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="58" y="28" w="125" h="107" measuredW="374" measuredH="320" zOrder="1" locked="false" isInGroup="2">
+          <controlProperties>
+            <src>./assets/logo.png</src>
+            <text/>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Image" x="694" y="281" w="125" h="107" measuredW="374" measuredH="320" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>homepage%26bm%3Bhomepage.bmml%26bm%3Bhomepage.bmml%26bm%3Bhomepage.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22636%2C261%2C761%2C368%22%20href%3D%22homepage.bmml%22%20alt%3D%22homepage%22%20id%3D%228%22/%3E</map>
+        <src>./assets/logo.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

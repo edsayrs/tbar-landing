@@ -1,0 +1,206 @@
+
+body{
+	background-color:#666;
+	font-family: "alternate-gothic-no-1-d", sans-serif;
+}
+
+.brand img{
+	height:50px;
+}
+.centered{
+	display:block;
+	margin:0 auto;
+	text-align:center;
+}
+.background{
+	background-image: url("img/img-girl-bg-1.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+h1{
+	text-transform:uppercase;
+}
+
+h2{
+text-transform:uppercase;
+}
+
+.splash {
+margin-bottom:20px;
+}
+
+/*==============BOOTSTRAP NAVBAR OVERRIDES====================*/
+
+.navbar{
+	margin-bottom:0;
+	box-shadow: 0px 3px 10px grey;
+	border-radius: 4px;
+
+	
+}
+.navbar .nav{
+	margin-left:-1000px;
+}
+
+.header-14-sub .hero-unit h1{
+	font-weight:200;
+}
+
+.navbar-inner {
+  min-height:35px;
+  padding:0;
+  background-color: black;
+  border:none;
+/*    background-image:linear-gradient(#949494, #444); */
+background-image:none;
+   border-bottom: 1px solid #999;
+   text-align: center;
+   float:none;
+   margin-left: auto;
+   margin-right: auto;  
+    }
+
+.navbar .nav > li > a {
+  float: none;
+  padding: 25px 30px 20px;
+  color: #fff;
+  text-decoration: none;
+/*   text-shadow: 0 1px 0 #ffffff; */
+text-shadow:none;
+    margin-left:auto;
+   margin-right:auto;
+/*    width:100%; */
+   font-family: 'futura-pt', sans-serif;
+   text-transform: uppercase;
+   font-size: 14px;
+}
+.navbar .navbar-inner {
+    text-align: center;
+}
+.navbar .navbar-inner .nav {
+    float: right;
+/*     display:inline-block; */
+/* margin-top:-65px; */
+}
+
+
+.navbar .brand{
+  display: inline-block;
+  vertical-align:middle;
+  float:none;
+/*   padding: 0 20px 0; */
+  margin-left: auto;
+  margin-right:auto;
+  font-size: 25px;
+  font-weight: 200;
+  text-shadow:none;
+  font-family: 'Libre Baskerville', serif;
+	color:#1b8d82;
+	font-style: italic;
+	text-transform: lowercase;
+	text-align: center;
+    
+
+}
+
+.navbar .nav > li > a.brand{
+	padding-top:4px;
+	padding-bottom:0;
+	text-align: center;
+	margin:0 auto;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+          border-radius: 4px;
+}
+
+
+
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color:#000;
+  text-decoration: none;
+  background-color: #bebebe;
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+          border-radius: 4px;
+}
+/* container override */
+.container-fluid{
+	padding:0;
+}
+
+/*slider btn overrides*/
+ .slider-caption{
+
+width:40%;
+min-width:200px;
+padding-top:10px;
+padding-bottom:20px;
+z-index:10;
+position:absolute;
+margin-top:35%;
+margin-bottom: 10px;
+text-align: center;
+margin-right:5%;
+color:white;
+
+
+}
+
+.cap1{
+margin-left:50%;
+margin-top:25%;
+
+}
+
+.cap2{
+	margin-left:5%;
+	margin-top:20%;
+}
+.cap2 p{
+	padding:0 80px;
+}
+
+.cap3{
+	margin:12% auto 10% auto;
+	text-align:center;
+	width:100%;
+}
+
+.cap3 p{
+	padding:0 400px;
+}
+.slider-caption .btn{
+	background-color:transparent;
+/* 	background-image:linear-gradient(#949494, #444); */
+background-image:none;
+	color:#fff;
+	border:2px solid #fff;
+	border-radius:5px;
+}
+
+
+/*================================PHONE STYLES======================*/
+/* visible phone */
+
+@media (max-width:767px){
+.navbar .navbar-inner .nav {
+/* margin-top:0px; */
+}
+
+}/*end phone styles*/
+
+
